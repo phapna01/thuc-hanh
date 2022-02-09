@@ -1,0 +1,348 @@
+﻿<html>
+<head><title>Bài 2</title></head>
+<style type="text/css">
+/*	RESET CSS	*/
+*{
+margin:0px;
+padding:0px;
+}
+table#wrapper{
+width:810px;
+height:auto;
+border:5px solid #FFFFFF;
+margin:0px auto;
+}
+/*	BODY	*/
+body{
+background-color:#434343;
+background-image:url(images/background.gif);
+background-repeat:repeat-x;
+background-attachment:fixed;
+}
+/*	NAVBAR	MENU	*/
+table#navbar tr td{
+padding:0px 10px;
+background:url(images/line_bar.gif) top right no-repeat;
+}
+#navbar tr td a{
+font-family:arial;
+font-size:12px;
+font-weight:bold;
+color:#FF7800;
+text-decoration:none;
+text-transform:capitalize;
+}
+#navbar tr td:hover{
+background:#FF7800;
+}
+#navbar tr td:hover a{
+color:#FFFFFF;
+}
+/*	SIDEBAR MENU	*/
+table.sidebar_menu{
+border:1px solid #434343;
+}
+table.sidebar_menu tr td{
+padding-top:5px;
+padding-bottom:5px;
+padding-left:5px;
+}
+table.sidebar_menu tr a{
+font-family:arial;
+font-size:12px;
+color:#434343;
+text-decoration:none;
+}
+table.sidebar_menu tr a:hover{
+color:#FF7800;
+text-decoration:underline;
+}
+table.sidebar_menu tr.title_menu{
+font-family:arial;
+font-size:12px;
+font-weight:bold;
+color:#FFFFFF;
+text-align:center;
+text-transform:capitalize;
+}
+/*	REPORT	*/
+table#report{
+font-family:arial;
+font-size:12px;
+font-style:italic;
+color:#FFFFFF;
+text-align:justify;
+}
+table#report tr td{
+padding:10px;
+}
+/*	CONTENT	*/
+.left-content tr td{
+font-family:arial;
+font-size:12px;
+color:#333333;
+}
+.left-content tr td.cat-title{
+font-family:arial;
+font-size:12px;
+font-weight:bold;
+color:#FFFFFF;
+text-transform:uppercase;
+padding-left:5px;
+}
+.left-content tr td a{
+font-family:arial;
+font-size:12px;
+color:#FF7800;
+text-decoration:none;
+text-transform:capitalize;
+}
+.left-content tr td a:hover{
+text-decoration:underline;
+}
+.left-content tr td img{
+border:1px solid #cdcdcd;
+padding:2px;
+margin-right:5px;
+}
+.right-content tr td{
+font-family:arial;
+font-size:12px;
+color:#333333;
+}
+.right-content tr td.cat-title{
+font-family:arial;
+font-size:12px;
+font-weight:bold;
+color:#FFFFFF;
+text-transform:uppercase;
+padding-right:5px;
+}
+.right-content tr td a{
+font-family:arial;
+font-size:12px;
+color:#FF7800;
+text-decoration:none;
+text-transform:capitalize;
+}
+.right-content tr td a:hover{
+text-decoration:underline;
+}
+.right-content tr td img{
+border:1px solid #cdcdcd;
+padding:2px;
+margin-left:5px;
+}
+/*	FOOTER	*/
+#footer{
+font-family:arial;
+font-size:11px;
+color:#FFFFFF;
+text-align:center;
+text-transform:capitalize;
+}
+</style>
+<body>
+<table id="wrapper" style="background:#FFFFFF;" align="center" width="810" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="100" colspan="3" align="center" background="images/banner.gif">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="32" colspan="3" align="left" valign="middle" background="../images/nav.gif">
+    	<!--Menu ngang-->
+        <table id="navbar" height="32" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="center" valign="middle"><a href="#">trang chủ</a></td>
+            <td align="center" valign="middle"><a href="#">giới thiệu</a></td>
+            <td align="center" valign="middle"><a href="#">tin tức</a></td>
+            <td align="center" valign="middle"><a href="#">liên hệ</a></td>
+            <td align="center" valign="middle"><a href="#">diễn đàn</a></td>
+          </tr>
+        </table>
+      <!--End Menu ngang-->
+    </td>
+  </tr>
+  <!--Hr-->
+  <tr>
+  	<td height="10px" colspan="3"><hr size="2" color="#434343"></td>
+  </tr>
+  <!--End Hr-->
+  <tr>
+    <td width="150" valign="top">
+      <!--Menu trái-->
+      <table class="sidebar_menu" width="150" border="0" cellspacing="0" cellpadding="0">
+          <tr class="title_menu">
+            <td width="150" height="26" align="center" valign="middle" background="../images/menu_bar.gif">danh mục chính</td>
+        </tr>
+          <tr>
+            <td align="left" valign="top"><a href="#">gia công phần mềm</a></td>
+          </tr>
+          <tr>
+            <td align="left" valign="top"><a href="#">đào tạo lập trình viên</a></td>
+          </tr>
+          <tr>
+            <td align="left" valign="top"><a href="#">tư vấn doanh nghiệp</a></td>
+          </tr>
+          <tr>
+            <td align="left" valign="top"><a href="#">ảnh viện áo cưới</a></td>
+          </tr>
+      </table>
+      <br>
+      <table class="sidebar_menu" width="150" border="0" cellspacing="0" cellpadding="0">
+          <tr class="title_menu">
+            <td width="150" height="26" align="center" valign="middle" background="../images/menu_bar.gif">bài viết đáng chú ý</td>
+        </tr>
+          <tr>
+            <td align="left" valign="top"><a href="#">hướng dẫn đăng ký học</a></td>
+          </tr>
+          <tr>
+            <td align="left" valign="top"><a href="#">hình thức học tập online</a></td>
+          </tr>
+          <tr>
+            <td align="left" valign="top"><a href="#">cài đặt sử dụng skype</a></td>
+          </tr>
+          <tr>
+            <td align="left" valign="top"><a href="#">cài đặt sử dụng teamviewer</a></td>
+          </tr>
+          <tr>
+            <td align="left" valign="top"><a href="#">hướng dẫn đóng học phí tại vietpro</a></td>
+          </tr>
+      </table>
+      <br>
+      <img src="../images/img1.gif">
+      <br>
+      <img src="../images/img2.gif">
+      <!--End Menu trái-->
+    </td>
+    <td width="500" align="center" valign="top">
+    	<!--Thông báo-->
+        <table id="report" width="480" height="80" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="justify" valign="middle" background="../images/intro.gif">
+            VIETPRO - đơn vị chuyên cung cấp các giải pháp outsourcing Công nghệ
+thông tin chuyên nghiệp cho các thị trường Bắc Mỹ và Canada cũng như
+các doanh nghiệp trong nước. Chúng tôi hy vọng sẽ mang đến cho các doanh nghiệp những sản phẩm có chất lượng cao với chi phí thấp nhất
+            </td>
+          </tr>
+        </table>
+    <!--End Thông báo-->
+        <br>
+        <!--Content 1-->
+        <table class="left-content" width="480" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td class="cat-title" height="26" colspan="2" align="left" valign="middle" background="../images/main_bar_left.gif">cntt</td>
+          </tr>
+          <tr>
+            <td colspan="2" align="left" valign="top"><a href="#">gia công phần mềm</a></td>
+          </tr>
+          <tr>
+            <td width="155" align="left" valign="top"><img src="../images/phanmem.gif"></td>
+            <td align="justify" valign="top">VIETPRO - đơn vị chuyên cung cấp các giải pháp outsourcing Công nghệ
+thông tin chuyên nghiệp cho các thị trường Bắc Mỹ và Canada cũng như
+các doanh nghiệp trong nước. Chúng tôi hy vọng sẽ mang đến cho các doanh nghiệp những sản phẩm có chất lượng cao với chi phí thấp nhất...<a href="#">chi tiết</a></td>
+          </tr>
+		</table>
+        <!--End Content 1-->
+        <br>
+        <!--Content 2-->
+        <table class="right-content" width="480" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td class="cat-title" height="26" colspan="2" align="right" valign="middle" background="../images/main_bar_right.gif">giáo dục</td>
+          </tr>
+          <tr>
+            <td colspan="2" align="right" valign="top"><a href="#">đào tạo lập trình viên</a></td>
+          </tr>
+          <tr>
+            <td align="justify" valign="top">VIETPRO - đơn vị chuyên cung cấp các giải pháp outsourcing Công nghệ
+thông tin chuyên nghiệp cho các thị trường Bắc Mỹ và Canada cũng như
+các doanh nghiệp trong nước. Chúng tôi hy vọng sẽ mang đến cho các doanh nghiệp những sản phẩm có chất lượng cao với chi phí thấp nhất...<a href="#">chi tiết</a></td>
+            <td width="155" align="right" valign="top"><img src="../images/laptrinh.gif"></td>
+          </tr>
+		</table>
+        <!--End Content 2-->
+        <br>
+        <!--Content 1-->
+        <table class="left-content" width="480" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td class="cat-title" height="26" colspan="2" align="left" valign="middle" background="../images/main_bar_left.gif">thương mại</td>
+          </tr>
+          <tr>
+            <td colspan="2" align="left" valign="top"><a href="#">tư vấn doanh nghiệp</a></td>
+          </tr>
+          <tr>
+            <td width="155" align="left" valign="top"><img src="../images/doanhnghiep.gif"></td>
+            <td align="justify" valign="top">VIETPRO - đơn vị chuyên cung cấp các giải pháp outsourcing Công nghệ
+thông tin chuyên nghiệp cho các thị trường Bắc Mỹ và Canada cũng như
+các doanh nghiệp trong nước. Chúng tôi hy vọng sẽ mang đến cho các doanh nghiệp những sản phẩm có chất lượng cao với chi phí thấp nhất...<a href="#">chi tiết</a></td>
+          </tr>
+		</table>
+        <!--End Content 3-->
+        <br>
+        <!--Content 2-->
+        <table class="right-content" width="480" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td class="cat-title" height="26" colspan="2" align="right" valign="middle" background="../images/main_bar_right.gif">dịch vụ</td>
+          </tr>
+          <tr>
+            <td colspan="2" align="right" valign="top"><a href="#">ảnh viện áo cưới</a></td>
+          </tr>
+          <tr>
+            <td align="justify" valign="top">VIETPRO - đơn vị chuyên cung cấp các giải pháp outsourcing Công nghệ
+thông tin chuyên nghiệp cho các thị trường Bắc Mỹ và Canada cũng như
+các doanh nghiệp trong nước. Chúng tôi hy vọng sẽ mang đến cho các doanh nghiệp những sản phẩm có chất lượng cao với chi phí thấp nhất...<a href="#">chi tiết</a></td>
+            <td width="155" align="right" valign="top"><img src="../images/anhvien.gif"></td>
+          </tr>
+		</table>
+        <!--End Content 4-->
+        <br>
+    </td>
+    <td width="150" align="right" valign="top">
+        <!--Menu phải-->
+    <table class="sidebar_menu" width="150" border="0" cellspacing="0" cellpadding="0">
+          <tr class="title_menu">
+            <td width="150" height="26" align="center" valign="middle" background="../images/menu_bar.gif">tư vấn trực tuyến</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top"><img src="../images/online.gif"></td>
+          </tr>
+          <tr>
+            <td align="center" valign="top"><img src="../images/offline.gif"></td>
+          </tr>
+        </table>
+        <br>
+        <table class="sidebar_menu" width="150" border="0" cellspacing="0" cellpadding="0">
+          <tr class="title_menu">
+            <td width="150" height="26" align="center" valign="middle" background="../images/menu_bar.gif">các bài viết mới</td>
+        </tr>
+          <tr>
+            <td align="left" valign="top"><a href="#">htaccess trong php</a></td>
+          </tr>
+          <tr>
+            <td align="left" valign="top"><a href="#">html 5 &amp; seo</a></td>
+          </tr>
+          <tr>
+            <td align="left" valign="top"><a href="#">viết trang login &amp; logout cho hệ thống</a></td>
+          </tr>
+          <tr>
+            <td align="left" valign="top"><a href="#">css nâng cao</a></td>
+          </tr>
+          <tr>
+            <td align="left" valign="top"><a href="#">làm mịn da mặt với photoshop cs3</a></td>
+          </tr>
+      </table>
+      <br>
+      <img src="../images/img3.gif">
+      <br>
+      <img src="../images/img4.gif">
+      <br>
+      <img src="../images/img5.gif">
+      <!--End Menu phải-->
+    </td>
+  </tr>
+  <tr id="footer">
+    <td height="60" colspan="3" align="center" background="../images/footer.gif">bản quyền thuộc về trung tâm đào tạo lập trình - thiết kế - đồ họa website vietpro</td>
+  </tr>
+</table>
+
+</body>
+</html>

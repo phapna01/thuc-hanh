@@ -1,0 +1,134 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins";
+    height: 100%;
+    background: linear-gradient(to right, #4daf54, #3d8880);
+}
+
+.card{
+    margin: 120px auto;
+    padding: 20px;
+    height: 400px;
+    width: 300px;
+    background: #272d40;
+    border-radius: 15px;
+    color: white;
+    position: relative;
+}
+
+.card__heart, .card__cart{
+    font-size: 25px;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+}
+.card__cart{
+    left: unset;
+    right: 20px;
+}
+.card__ima{
+    padding-top: 30px;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.card__ima img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card__title{
+    text-align: center;
+    padding-top: 20px;
+    color: green;
+    transition: 0.5s;
+}
+.card__price{
+    text-align: center;
+    transition: 0.5s;
+}
+
+.card__size, .card__color{
+    display: flex;
+    align-items: center;
+}
+
+.card__size span{
+    background: white;
+    padding: 1px 10px;
+    border-radius: 5px;
+    margin: 0 5px; 
+    color: black;
+    cursor: pointer;
+}
+
+
+.card__color span{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.cart__color__green{
+    background: green;
+}
+.cart__color__red{
+    background: red;
+}
+.cart__color__white{
+    background: white;
+}
+
+.car__action button{
+    padding: 10px 20px;
+    background: green;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-right: 10px;
+}
+.car__action button:hover{
+    transform: scale(0.9);
+}
+
+.card:hover .card__ima{
+    transform: translateY(-90px) rotate(-20deg);
+}
+
+.card:hover .card__title{
+    transform: translate(-20px, -70px);
+}
+.card:hover .card__price{
+    transform: translate(-100px, -70px);
+}
+
+.card__size{
+    margin-top: 150px;
+}
+.card__size, .card__color, .car__action{
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: 0.4s;
+}
+.card:hover .card__size, .card:hover .card__color, .card:hover .car__action{
+    visibility: visible;
+    opacity: 100;
+}
+
+.card:hover .card__size{
+    margin-top: -20px;
+}
